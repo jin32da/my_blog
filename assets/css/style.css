@@ -1,0 +1,111 @@
+/* assets/css/style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header.banner {
+  background: url('/assets/img/banner2.png') no-repeat center center/cover;
+  color: #fff;
+  padding: 5rem 0; /* 배너 높이 조절 */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header.banner h1 {
+  margin: 0;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header.banner a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 기존 header 스타일은 제거 */
+header {
+  display: none; /* 기존 header 스타일 숨김 */
+}
+
+.container {
+  display: flex;
+  max-width: 1200px; /* 전체 컨테이너 최대 너비 */
+  margin: 20px auto; /* 상하 20px, 좌우 자동 마진 */
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  width: 250px; /* 사이드바 너비 */
+  padding: 20px;
+  border-right: 1px solid #eee;
+  background: #f9f9f9;
+  flex-shrink: 0; /* 사이드바가 줄어들지 않도록 */
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: #555;
+}
+
+.sidebar p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+main {
+  flex-grow: 1; /* 남은 공간을 모두 차지 */
+  padding: 20px;
+  min-height: 60vh; /* 최소 높이 설정 */
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #ddd;
+}
+
+.category-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category-section li {
+  margin-bottom: 5px;
+}
+
+.category-section a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.category-section a:hover {
+  text-decoration: underline;
+}

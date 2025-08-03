@@ -1,0 +1,16 @@
+<aside class="sidebar">
+  <div class="profile-section">
+    <img src="{{ '/assets/img/profile.png' | relative_url }}" alt="Profile Picture" class="profile-pic">
+    <h3>About Me</h3>
+    <p>안녕하세요! 개발과 투자에 관심이 많은 개발자J입니다.</p>
+  </div>
+
+  <div class="category-section">
+    <h3>Categories</h3>
+    <ul>
+      {% for category in site.categories %}
+        <li><a href="{{ site.baseurl }}/categories/#{{ category | first }}">{{ category | first }} ({{ category | last | size }})</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</aside>
